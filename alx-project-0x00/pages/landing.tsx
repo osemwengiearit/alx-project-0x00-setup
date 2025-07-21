@@ -8,7 +8,7 @@ export default function Landing() {
       <div className="flex gap-4 mt-4">
         <Button title="Small" styles="text-sm rounded-sm" />
         <Button title="Medium" styles="text-md rounded-md" />
-        <Button title="Large" styles="text-lg rounded-full" />
+        <Button title="Large" styles="text-lg rounded-lg" />
       </div>
     </div>
   );
