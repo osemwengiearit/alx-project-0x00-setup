@@ -1,11 +1,8 @@
-import React from 'react';
-import { ButtonProps } from '@/interfaces';
+import { ButtonProps } from '@/interfaces'; // already done ✅
 
 const Button: React.FC<ButtonProps> = ({ title, className }) => {
   return (
-    <button
-      className={`text-white font-medium bg-blue-600 px-4 py-2 ${className}`}
-    >
+    <button className={`bg-blue-500 text-white px-4 py-2 ${className}`}>
       {title}
     </button>
   );
