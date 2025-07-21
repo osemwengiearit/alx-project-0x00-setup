@@ -1,25 +1,15 @@
-import React from 'react';
-import Card from '@/components/Card';
 import Button from '@/components/Button';
 
-const Landing: React.FC = () => {
+export default function Landing() {
   return (
-    <div className="p-6 space-y-6">
-      <h1 className="text-2xl font-extralight">Landing Page</h1>
+    <div>
+      <h1 className="text-2xl font-bold">Landing Page</h1>
 
-      <Card />
-      <Card />
-
-      <div className="mt-6 space-y-2">
-        <h2 className="text-xl font-semibold">Buttons:</h2>
-        <div className="flex gap-3 flex-wrap">
-          <Button title="Small" className="rounded-sm text-sm" />
-          <Button title="Medium" className="rounded-md text-base" />
-          <Button title="Large" className="rounded-full text-lg" />
-        </div>
+      <div className="flex gap-4 mt-4">
+        <Button title="Small" styles="text-sm rounded-sm" />
+        <Button title="Medium" styles="text-md rounded-md" />
+        <Button title="Large" styles="text-lg rounded-full" />
       </div>
     </div>
   );
-};
-
-export default Landing;
+}

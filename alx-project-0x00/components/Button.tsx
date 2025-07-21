@@ -1,8 +1,9 @@
-import { ButtonProps } from '@/interfaces'; // already done ✅
+// components/Button.tsx
+import { ButtonProps } from '@/interfaces';
 
-const Button: React.FC<ButtonProps> = ({ title, className }) => {
+const Button: React.FC<ButtonProps> = ({ title, styles }) => {
   return (
-    <button className={`bg-blue-500 text-white px-4 py-2 ${className}`}>
+    <button className={`${styles} px-4 py-2 bg-blue-500 text-white`}>
       {title}
     </button>
   );
